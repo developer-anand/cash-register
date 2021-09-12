@@ -14,10 +14,12 @@ const availableNotes = [2000, 500, 100, 20 ,10 ,5 ,1];
 
 checkBtn.addEventListener("click", function validateBillAndCashAmount(){
    hideError();
+    let billAmountVal = Number(billAmount.value)
+    let cashGivenVal = Number(cashGiven.value)
 
-    if(billAmount.value > 0){
-        if(cashGiven.value >= billAmount.value){
-            const amountToBeReturn = cashGiven.value - billAmount.value;
+    if(billAmountVal > 0){
+        if(cashGivenVal >= billAmountVal){
+            const amountToBeReturn = cashGivenVal - billAmountVal;
             calculateNoOfNotes(amountToBeReturn);
         }
         else{
