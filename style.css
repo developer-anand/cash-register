@@ -1,0 +1,14 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    width: 90vw;
+    height: 3vh ;
+}
+table{
+    border: 1px solid;
+}
